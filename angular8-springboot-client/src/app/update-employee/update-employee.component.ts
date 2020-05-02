@@ -31,11 +31,13 @@ export class UpdateEmployeeComponent implements OnInit {
 
   updateEmployee() {
     this.employeeService.updateEmployee(this.id, this.employee).subscribe(
-      (data) => console.log(data),
+      (data) => {
+        console.log(data);
+        this.gotoList();
+      },
       (error) => console.log(error)
     );
     this.employee = new Employee();
-    this.gotoList();
   }
 
   onSubmit() {

@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class EmployeeService {
 
-  private baseUrl = 'http://localhost:8080/springboot-crud-rest/api/v1/employees';
+  // private baseUrl = 'http://localhost:8080/springboot-crud-rest/api/v1/employees';
+  private baseUrl = 'http://localhost:8080/springboot2-jpa-crud-example-0.0.1-SNAPSHOT/api/v1/employees';
 
   constructor(private http: HttpClient) { }
 
