@@ -6,7 +6,7 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'employee', pathMatch: 'full' },
+  { path: '', redirectTo: 'employees', pathMatch: 'full' },
   { path: 'employees', component: EmployeeListComponent },
   { path: 'add', component: CreateEmployeeComponent },
   { path: 'update/:id', component: UpdateEmployeeComponent },
@@ -15,6 +15,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
